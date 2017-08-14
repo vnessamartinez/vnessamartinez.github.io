@@ -1,0 +1,387 @@
+/* tablet */
+@media (max-width: 768px) {
+  .lightbox .close {
+    top: 3%;
+    right: 5%;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .itemContainer {
+    text-align: center;
+  }
+
+  .item a img{
+    width: 20%;
+    float: left;
+    margin: 3px;
+  }
+
+  .item img.enlarge {
+    width: 20%;
+    float: left;
+    margin: 3px;
+  } 
+
+  div .name {
+    margin-top: 5%;
+    font-size: 60px;
+    display: block;
+    clear: both;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 15px;
+  }
+
+  .writing-list li {
+    font-size: 15px;
+  }
+
+  .writing-list li .pub {
+    display: block;
+    padding-bottom: 3px;
+    padding-left: 0px;
+  }
+
+
+}
+
+/* mobile */
+@media (max-width: 480px) {
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+    text-align: right;
+  }
+
+  nav.mobile i {
+    margin-right: 5%;
+    font-size: 30px;
+    padding: 2px;
+  }
+
+  nav.mobile i:hover {
+    background-color: #33b0da;
+    color: white;
+    padding: 2px;
+    cursor: pointer;
+    transition: all .2s linear;
+  }
+
+  ul.mobile-menu li {
+    width: 100%;
+  }
+
+  ul.mobile-menu li:hover {
+    background-color: #33b0da;
+    color: white;
+    padding-bottom: 0px;
+    font-weight: bold;
+  }
+
+  .lightbox .close {
+    color: white;
+    top: 2%;
+    right: 5%;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .itemContainer {
+    text-align: center;
+  }
+
+  .item a img{
+    width: 30%;
+    float: left;
+    margin: 3px;
+  }
+
+  .item img.enlarge {
+    width: 30%;
+    float: left;
+    margin: 3px;
+  } 
+
+  div .name {
+    margin-top: 0%;
+    font-size: 40px;
+    display: block;
+    clear: both;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 15px;
+  }
+
+  .writing-list li {
+    font-size: 15px;
+  }
+
+  .writing-list li .pub {
+    display: block;
+    padding-bottom: 3px;
+    padding-left: 0px;
+  }
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+}
+
+.container {
+  padding-top: 70px;
+  max-width: 700px;
+  margin: auto;
+}
+
+nav.mobile {
+  display: none;
+}
+
+nav.desktop{
+  padding-bottom: 20px;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.menuContainer {
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  clear: both;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+} 
+
+nav ul li {
+  float: left;
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li:first-of-type {
+  margin-left: 0px;
+}
+
+nav ul li:hover::after {
+  content: "";
+  height: 4px;
+  display: block;
+  background-color: #33b0da;
+  margin-top: 5px;
+}
+
+.active::after {
+  content: "";
+  height: 4px;
+  display: block;
+  background-color: #33b0da;
+  margin-top: 5px;
+  transition: all .2s linear;
+}
+
+.name {
+  margin-top: 6%;
+  font-size: 60px;
+  display: block;
+  clear: both;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 60px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.intro {
+  line-height: 25px;
+}
+
+.buttons {
+  text-align: center;
+  padding: 20px 0 0px 0;
+}
+
+.buttons button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    background: white;
+    border: 1px solid #33b0da;
+    border-radius: 4px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  background: #33b0da;
+}
+
+.topic {
+  margin: auto;
+}
+
+.topic-name {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: gray;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+  font-weight: bold;
+  padding: 50px 0 10px 0;
+  clear: both;
+}
+
+.topic.writing ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.topic.writing ul li {
+  line-height: 20px;
+}
+
+.topic.writing ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.topic.writing ul li a:hover {
+  font-weight: bold;
+  color: gray;
+  text-decoration: underline;
+}
+
+.pub {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: gray;
+  padding-left: 15px;
+}
+
+/*.topic-name.print {
+  clear: both;
+  overflow: hidden;
+  float: none;}
+
+.topic-name.graphics {
+  clear: both;
+}
+*/
+
+.itemContainer {
+  width: 60%;
+  text-align: center;
+}
+
+.item img {
+  width: 125px;
+  float: left;
+  margin: 5px;
+}
+
+.item img:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.item a img:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.credit {
+  text-align: right;
+  font-size: 10px;
+  clear: both;
+  padding-top: 50px;
+  color: gray;
+  padding-bottom: 100px;
+}
+
+.credit .social-media img{
+  width: 25px;
+}
+
+.credit .social-media img:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x:hidden;
+  overflow-y:scroll
+}
+.lightbox .close {
+  color: white;
+  font-weight: bold;
+  font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+  cursor: pointer;
+  text-align: right;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.lightbox .close:hover {
+  color: #e0e0e0;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.portfolio-item {
+  width: 75%;
+  height: auto;
+  padding: 5%;
+}
+
+.hidden {
+  display: none;
+}
