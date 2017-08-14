@@ -1,5 +1,5 @@
 /* tablet */
-@media (max-width: 768px) {
+@media sreen and (max-width: 768px) {
   .lightbox .close {
     top: 3%;
     right: 5%;
@@ -54,7 +54,7 @@
 }
 
 /* mobile */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
   nav.desktop {
     display: none;
@@ -154,10 +154,6 @@ body {
   padding-top: 70px;
   max-width: 700px;
   margin: auto;
-}
-
-nav.mobile {
-  opacity: none;
 }
 
 nav.desktop{
