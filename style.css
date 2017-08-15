@@ -69,8 +69,27 @@
   }
 
   nav.mobile {
+    font-size: 13px;
     display: block;
     text-align: right;
+  }
+
+  ul.mobile-menu {
+    width: 100%;
+  }
+
+  ul.mobile-menu li {
+    width: 100%;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  ul.mobile-menu li:hover {
+    background-color: #33b0da;
+    color: white;
+    cursor: pointer; 
+    padding: 8px;
+    font-size: 13px;
   }
 
   nav.mobile .menuName {
@@ -84,6 +103,15 @@
     color: #A9A9A9;
     letter-spacing: .6px;
   }
+
+  nav.mobile ul li.active {
+    background-color: #33b0da;
+    color: white;
+    cursor: pointer; 
+    font-size: 13px;
+  }
+
+  /* look at top 3 */
 
   nav.mobile i {
     margin-right: 5%;
@@ -214,28 +242,25 @@ nav ul li {
   text-transform: uppercase;
   font-size: 13px;
   display: inline-block;
-  padding: 10px;
+  padding-bottom: 10px;
+  margin: 10px 10px 0 10px;
 }
 
-nav ul li:first-of-type {
+/*nav ul li:first-of-type {
   margin-left: 0px;
-}
+}*/
 
-nav ul li:hover::after {
-  content: "";
+nav ul li:hover{
+  border-bottom: 4px solid #33b0da;
+/*  content: "";
   height: 4px;
   display: block;
   background-color: #33b0da;
-  margin-top: 5px;
+  margin-top: 5px;*/
 }
 
-.active::after {
-  content: "";
-  height: 4px;
-  display: block;
-  background-color: #33b0da;
-  margin-top: 5px;
-  transition: all .2s linear;
+.active {
+  border-bottom: 4px solid #33b0da;
 }
 
 .name {
