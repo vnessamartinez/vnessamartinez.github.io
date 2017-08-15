@@ -69,7 +69,7 @@
   }
 
   nav.mobile {
-    font-size: 13px;
+    font-size: 15px;
     display: block;
     text-align: right;
   }
@@ -81,15 +81,18 @@
   ul.mobile-menu li {
     width: 100%;
     margin: 0px;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   ul.mobile-menu li:hover {
+    width: 100;
+    margin: 0;
     background-color: #33b0da;
     color: white;
     cursor: pointer; 
-    padding: 8px;
-    font-size: 13px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    transition: all .05s linear;
   }
 
   nav.mobile .menuName {
@@ -108,7 +111,8 @@
     background-color: #33b0da;
     color: white;
     cursor: pointer; 
-    font-size: 13px;
+    font-size: 15px;
+    padding: 8px;
   }
 
   /* look at top 3 */
@@ -138,7 +142,7 @@
   ul.mobile-menu li:hover {
     background-color: #33b0da;
     color: white;
-    padding-bottom: 0px;
+    padding: 8px 0;
     font-weight: bold;
   }
 
@@ -234,7 +238,7 @@ nav ul {
   padding: 0;
 } 
 
-nav ul li {
+nav.desktop ul li {
   float: left;
   display: inline-block;
   color: black;
@@ -250,7 +254,7 @@ nav ul li {
   margin-left: 0px;
 }*/
 
-nav ul li:hover{
+nav.desktop ul li:hover{
   border-bottom: 4px solid #33b0da;
 /*  content: "";
   height: 4px;
@@ -259,7 +263,7 @@ nav ul li:hover{
   margin-top: 5px;*/
 }
 
-.active {
+nav.desktop ul li.active {
   border-bottom: 4px solid #33b0da;
 }
 
@@ -318,7 +322,7 @@ button:hover {
 
 .topic-name {
   font-size: 15px;
-  letter-spacing: 1px;
+  letter-spacing: .6px;
   text-transform: uppercase;
   color: gray;
   text-align: center;
