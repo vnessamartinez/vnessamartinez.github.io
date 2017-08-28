@@ -6,8 +6,9 @@
     font-size: 30px;
   }
 
-  .container {
+  div.container {
     width: 90%;
+    padding-top: 0;
   }
 
   .itemContainer {
@@ -448,6 +449,7 @@ button:hover {
 
 /* desktop nav */
 @media screen and (min-width: 769px) {
+
   .img-container {
     text-align: center;
     vertical-align: center;
@@ -459,4 +461,10 @@ button:hover {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+
+  div.container {
+    width: 100%;
+    padding-top: 0;
+  }
+
 }
