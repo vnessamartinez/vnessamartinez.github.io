@@ -378,6 +378,8 @@ button:hover {
 .item img:hover {
   opacity: .5;
   cursor: pointer;
+  border-bottom: 2px solid #33b0da;
+  margin-bottom: 3px;
 }
 
 .item a img:hover {

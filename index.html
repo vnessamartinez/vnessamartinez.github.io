@@ -15,10 +15,10 @@
     <nav class="desktop">
         <ul>
           <li class="navHome" topic-type="home">Home</li>
-          <li class="navDesign" topic-type="design">Design</li>
-          <li class="navWriting" topic-type="writing">Writing</li>
-          <li class="navPhotos" topic-type="photography">Photography</li>
-          <li class="navMultimedia" topic-type="multimedia">Multimedia</li>
+          <a href="#design"><li class="navDesign" topic-type="design">Design</li></a>
+          <a href="#writing"><li class="navWriting" topic-type="writing">Writing</li></a>
+          <a href="#photography"><li class="navPhotos" topic-type="photography">Photography</li></a>
+          <a href="#multimedia"><li class="navMultimedia" topic-type="multimedia">Multimedia</li></a>
         </ul>
     </nav>
 
@@ -29,10 +29,10 @@
 
       <ul class="mobile-menu hidden">
         <li class="navHome" topic-type="home">Home</li>
-        <li class="navDesign" topic-type="design">Design</li>
-        <li class="navWriting" topic-type="writing">Writing</li>
-        <li class="navPhotos" topic-type="photography">Photography</li>
-        <li class="navMultimedia" topic-type="multimedia">Multimedia</li>
+        <a href="#design"><li class="navDesign" topic-type="design">Design</li></a>
+        <a href="#writing"><li class="navWriting" topic-type="writing">Writing</li></a>
+        <a href="#photography"><li class="navPhotos" topic-type="photography">Photography</li></a>
+        <a href="#multimedia"><li class="navMultimedia" topic-type="multimedia">Multimedia</li></a>
       </ul>
 
     </nav>
@@ -43,7 +43,7 @@
 
       <section class="intro">
         <p>
-          I'm a news producer at The Seattle Times. I keep the homepage up-to-date, share our stories on social media and send out breaking news alerts. I also work on web design and interactives. Previously, I was a page designer and copy editor at the Southern California News Group. Email me at <a href="mailto:vmartinez.contact@gmail.com">vmartinez.contact@gmail.com</a>.
+          I'm a digital editor at the Los Angeles Times. I produce and edit the latimes.com homepage. I also work on story buildouts and send breaking news alerts. I have web development and design experience. I have previously worked at The Seattle Times and the Southern California News Group. Email me at <a href="mailto:vmartinez.contact@gmail.com">vmartinez.contact@gmail.com</a>.
         </p>
       </section>
 
@@ -65,12 +65,16 @@
         </div>
       </div>
 
-      <section class="topic" section-type="design">
+      <section class="topic" section-type="design" id="design">
         <div class="topic-name">
           Web design and interactives
         </div>
 
         <div class="itemsContainer">
+          <div class="item">
+            <a href="https://projects.seattletimes.com/2017/seattle-mayoral-quiz/"><img src="./imgs/candidate-quiz.jpg"></a>
+          </div>
+
           <div class="item">
             <a href="https://projects.seattletimes.com/2017/washington-hiking-trails-guide/"><img src="./imgs/hiking-thumbnail.jpg"></a>
           </div>
@@ -109,6 +113,10 @@
       <section class="topic" section-type="design">
         <div class="topic-name">
           graphics
+        </div>
+
+        <div class="item">
+          <a href="http://projects.seattletimes.com/2017/politics/mayoral-campaign-contributions/"><img src="./imgs/campaign-contributions.jpg"></a>
         </div>
 
         <div class="item">
@@ -185,7 +193,7 @@
 
       </section>
 
-      <section class="topic writing" section-type="writing">
+      <section class="topic writing" section-type="writing" id="writing">
         <div class="topic-name">
           Writing
         </div>
@@ -202,7 +210,7 @@
         </ul>
       </section>
 
-      <section class="topic" section-type="photography">
+      <section class="topic" section-type="photography" id="photography">
           <div class="topic-name">
             Photography
           </div>
@@ -248,7 +256,7 @@
           </div>
       </section>
 
-      <section class="topic" section-type="multimedia">
+      <section class="topic" section-type="multimedia" id="multimedia">
           <div class="topic-name">
             Multimedia
           </div>

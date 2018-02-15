@@ -34,7 +34,7 @@ for (var i=0; i<lightbox.length; i++) {
 };
 
 var showResume = function(e) {
-  window.open("http://www.vanessa-martinez.com/wp-content/uploads/2015/04/vmartinez-resume.pdf");
+  window.open("http://vanessa-martinez.com/pdfs/vmartinez-resume.pdf");
 };
 
 var showSection = function(e) {
