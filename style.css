@@ -27,6 +27,11 @@
     margin: 5px 3px;
   } 
 
+  .item img.enlarge.pages {
+    height: 300px;
+    width: auto;
+  }
+
   div .name {
     margin-top: 5%;
     font-size: 60px;
@@ -173,6 +178,11 @@
     float: left;
     margin: 5px 3px;
   } 
+
+  .item img.enlarge.pages {
+    height: 200px;
+    width: auto;
+  }
 
   div .name {
     margin-top: 0%;
