@@ -185,8 +185,7 @@
   }
 
   .item img.enlarge.photo {
-    height: 105px;
-    width: auto;
+    width: 150px;
   }
 
   div .name {
