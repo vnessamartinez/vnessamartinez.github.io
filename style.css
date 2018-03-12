@@ -18,13 +18,13 @@
   .item a img{
     width: 20%;
     float: left;
-    margin: 3px;
+    margin: 5px 3px;
   }
 
   .item img.enlarge {
     width: 20%;
     float: left;
-    margin: 3px;
+    margin: 5px 3px;
   } 
 
   div .name {
@@ -165,13 +165,13 @@
   .item a img{
     width: 30%;
     float: left;
-    margin: 3px;
+    margin: 5px 3px;
   }
 
   .item img.enlarge {
     width: 30%;
     float: left;
-    margin: 3px;
+    margin: 5px 3px;
   } 
 
   div .name {
