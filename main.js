@@ -1,164 +1,69 @@
-var item = document.getElementsByClassName("enlarge");
-var close = document.getElementsByClassName("close");
-var lightbox = document.getElementsByClassName("lightbox");
-var portfolioItem = document.getElementsByClassName("portfolio-item");
-var resumeButton = document.getElementsByClassName("resume");
+//if someone taps div expand the box
+var box = document.querySelector('.expandable-box-container');
+if (box) {
+  var list = document.querySelector('.box-list');
+  var toggleWording = document.querySelector('.expand-minimize');
+  box.addEventListener('click', expandBox, false);
+  // box.addEventListener('touchstart', expandBox, false);
 
-var menuIcon = document.getElementsByClassName("material-icons");
-var mobileMenu = document.getElementsByClassName("mobile-menu");
+  function expandBox() {
+    list.classList.toggle('show');
+    if (toggleWording.innerHTML === '+') {
+      toggleWording.innerHTML = '-';
+    } else {
+      toggleWording.innerHTML = '+';
+    }
+  }
+}
 
-var allTopics = document.getElementsByTagName("li");
-var allSections = document.querySelectorAll("[section-type]");
+//if someone taps div expand the box - photo
+var box2 = document.querySelector('.expandable-box-container-2');
+if (box2) {
+  var list2 = document.querySelector('.box-list-2');
+  var toggleWording2 = document.querySelector('.expand-minimize-2');
+  box2.addEventListener('click', expandBox2, false);
+  // // box.addEventListener('touchstart', expandBox, false);
 
-var displayItem = function(e) {
+  function expandBox2() {
+    list2.classList.toggle('show-2');
+    if (toggleWording2.innerHTML === '+') {
+      toggleWording2.innerHTML = '-';
+    } else {
+      toggleWording2.innerHTML = '+';
+    }
+  }
+}
 
-for (var i=0; i < lightbox.length; i++) {  
-  lightbox[i].style.display = "block";
-};
-
-var imageId = this.getAttribute("element-id");
-var imageFile = "./imgs/" + imageId + ".jpg";
-
-
-for (var i=0; i < portfolioItem.length; i++) {  
-  portfolioItem[i].setAttribute("src", imageFile);
-};
-
-};
-
-var closeWindow = function(e) {
-
-for (var i=0; i<lightbox.length; i++) {  
-  lightbox[i].style.display = "none";
-};
-};
-
+// RESUME BUTTON
 var showResume = function(e) {
   window.open("http://vanessa-martinez.com/pdfs/vmartinez-resume.pdf");
 };
 
-var showSection = function(e) {
-  var topicClicked = this.getAttribute("topic-type");
-  var allTopics = document.querySelectorAll("[topic-type]");
-
-
-  for (var i=0; i < allTopics.length ; i++) {
-    allTopics[i].classList.remove("active");
-  };
-
-  this.classList.add("active");
-
-  if (topicClicked == "design") {
-    showDesign();
-    hideMenu();
-  } else if (topicClicked == "writing") {
-    showWriting();
-    hideMenu();
-  } else if (topicClicked == "photography") {
-    showPhotography();
-    hideMenu();
-  } else if (topicClicked == "home") {
-    showAll();
-    hideMenu();
-  } else {
-    showMultimedia();
-    hideMenu();
-  };
-};
-
-var showAll = function() {
-  for (var i=0; i < allSections.length; i++) {
-      allSections[i].style.display = "block";
-  };
-};
-
-var showDesign = function() {
-  for (var i=0; i < allSections.length; i++) {
-    var sectionAttribute = allSections[i].getAttribute("section-type");
-    if (sectionAttribute == "design") {
-      allSections[i].style.display = "block";
-    } else {
-      allSections[i].style.display = "none";
-    };
-  };
-};
-
-var showWriting = function() {
-  for (var i=0; i < allSections.length; i++) {
-    var sectionAttribute = allSections[i].getAttribute("section-type");
-    if (sectionAttribute == "writing") {
-      allSections[i].style.display = "block";
-    } else {
-      allSections[i].style.display = "none";
-    };
-  };
-};
-
-var showPhotography = function() {
-  for (var i=0; i < allSections.length; i++) {
-    var sectionAttribute = allSections[i].getAttribute("section-type");
-    if (sectionAttribute == "photography") {
-      allSections[i].style.display = "block";
-    } else {
-      allSections[i].style.display = "none";
-    };
-  };
-};
-
-var showMultimedia = function() {
-  for (var i=0; i < allSections.length; i++) {
-    var sectionAttribute = allSections[i].getAttribute("section-type");
-    if (sectionAttribute == "multimedia") {
-      allSections[i].style.display = "block";
-    } else {
-      allSections[i].style.display = "none";
-    };
-  };
-};
+// MOBILE MENU
+var menuIcon = document.querySelector(".material-icons");
+var mobileMenu = document.querySelector(".mobile-menu");
+var menuOptions = document.querySelectorAll(".mobile-menu a");
 
 var toggleMenu = function() {
-
-  for (var i=0; i < mobileMenu.length ; i++) {
-
-    if (mobileMenu[i].className == "mobile-menu hidden") {
-      mobileMenu[i].classList.remove("hidden");
+    if (mobileMenu.className == "mobile-menu hidden") {
+      mobileMenu.classList.remove("hidden");
     } else {
-      mobileMenu[i].classList.add("hidden");
+      mobileMenu.classList.add("hidden");
     }
-  }
-
 };
-
+// when you click on an li, close the menu
 var hideMenu = function() {
-    for (var i=0; i < mobileMenu.length ; i++) {
-    mobileMenu[i].classList.add("hidden");
-  };  
+    mobileMenu.classList.add("hidden");
 }
-
 
 // EVENT LISTENERS
 
-for (var i=0; i < mobileMenu.length; i++) {
-  mobileMenu[i].addEventListener("click", null);
-}
+menuIcon.addEventListener('click', function(){
+  toggleMenu();
+});
 
-for (var i=0; i < menuIcon.length; i++) {
-  menuIcon[i].addEventListener("click", toggleMenu);
-}
-
-for (var i=0; i < allTopics.length; i++) {
-  allTopics[i].addEventListener("click", showSection);
-}
-
-
-for (var i=0; i < resumeButton.length; i++) {
-  resumeButton[i].addEventListener("click", showResume);
-}
-
-for (var i=0; i < close.length; i++) {
-  close[i].addEventListener("click", closeWindow);
-}
-
-for (var i=0; i < item.length; i++) {
-  item[i].addEventListener("click", displayItem);
-}
+for (const options of menuOptions) {
+  options.addEventListener("click", function(event) {
+    hideMenu();
+  })
+};
