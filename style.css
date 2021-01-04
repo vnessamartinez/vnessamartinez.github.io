@@ -87,7 +87,7 @@ div.topper-container h1 {
   margin-top: 0;
   font-size: 55px;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 div.topper-container h1 img {
@@ -172,7 +172,7 @@ h2.section-title {
   padding-top: 150px;
   color: #268989;
 /*  text-shadow: .5px .5px 0px #FFFFFF, 1px 1px 2px #000000;*/
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 h2.section-title img {
@@ -237,7 +237,7 @@ section.about p.about-me {
   font-weight: 400;
   font-family: 'Shrikhand', serif;
   text-shadow: 2px 2px 2px #124F4F;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 /* EXPANDABLE - PRINT SECTION */
@@ -587,7 +587,7 @@ footer {
   div.topper-container h1 {
     font-size: 30px;
   }
-  div.topper-container h1 img {
+  div.topper-container h1.name img {
     display: inline-block;
     width: 30px;
     vertical-align: middle;
