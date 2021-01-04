@@ -90,6 +90,12 @@ div.topper-container h1 {
   letter-spacing: 1px;
 }
 
+div.topper-container h1 img {
+  display: inline-block;
+  width: 53px;
+  vertical-align: middle;
+}
+
 .topic-name {
   font-family: 'Roboto', serif;
   text-transform: uppercase;
@@ -168,9 +174,14 @@ h2.section-title {
 /*  text-shadow: .5px .5px 0px #FFFFFF, 1px 1px 2px #000000;*/
   letter-spacing: 1px;
 }
+
+h2.section-title img {
+  width: 42px;
+}
+
 h2.section-title:after {
   content: "";
-  width: 10%;
+  width: 100px;
   height: 2px;
   background-color: #ececec;
   display: block;
@@ -191,7 +202,7 @@ section.about {
   min-height: 20vh;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2326a3a3' fill-opacity='0.20'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-section.about img {
+section.about img#headshot {
   max-width: 150px;
   margin: 20px auto;
   display: block;
@@ -209,6 +220,10 @@ section.about p {
   margin: auto;
   font-size: 20px;
 /*  text-align: center;*/
+}
+section.about p.about-me img{
+  width: 32px;
+  vertical-align: middle;
 }
 section.about p a{
   color: #FFFFFF;
@@ -395,6 +410,10 @@ nav.desktop div.logo {
   font-size: 20px;
   padding-left: 1%;
 }
+nav.desktop div.logo img {
+  width: 20px;
+  vertical-align: middle;
+}
 nav.desktop ul {
   flex: 1 1 79%;
   display: flex;
@@ -464,6 +483,7 @@ footer {
   div.topper-container {
     max-width: 90%;
     margin: auto;
+    padding-top: 45%;
     padding-top: calc((100vh-285px)/2);
     padding-top: -webkit-calc((100vh-285px)/2);
     padding-top: -moz-calc((100vh-285px)/2);
@@ -517,6 +537,10 @@ footer {
   div.mobile-nav div.logo {
     display: inline-block;
   }
+  div.mobile-nav div.logo img {
+    width: 20px;
+    vertical-align: middle;
+  }
   div.mobile-nav i {
     display: block;
     color: #FFFFFF;
@@ -563,6 +587,11 @@ footer {
   div.topper-container h1 {
     font-size: 30px;
   }
+  div.topper-container h1 img {
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+  }
   div.intro p {
     font-size: 18px;
   }
@@ -581,6 +610,10 @@ footer {
   }
   section.about p.about-me {
     font-size: 30px;
+  }
+
+  h2.section-title img {
+    width: 30px;
   }
 
   /* DESIGN section */
