@@ -1,8 +1,8 @@
 //if someone taps div expand the box
-var box = document.querySelector('.expandable-box-container');
+let box = document.querySelector('.expandable-box-container');
 if (box) {
-  var list = document.querySelector('.box-list');
-  var toggleWording = document.querySelector('.expand-minimize');
+  let list = document.querySelector('.box-list');
+  let toggleWording = document.querySelector('.expand-minimize');
   box.addEventListener('click', expandBox, false);
   // box.addEventListener('touchstart', expandBox, false);
 
@@ -17,10 +17,10 @@ if (box) {
 }
 
 //if someone taps div expand the box - photo
-var box2 = document.querySelector('.expandable-box-container-2');
+let box2 = document.querySelector('.expandable-box-container-2');
 if (box2) {
-  var list2 = document.querySelector('.box-list-2');
-  var toggleWording2 = document.querySelector('.expand-minimize-2');
+  let list2 = document.querySelector('.box-list-2');
+  let toggleWording2 = document.querySelector('.expand-minimize-2');
   box2.addEventListener('click', expandBox2, false);
   // // box.addEventListener('touchstart', expandBox, false);
 
@@ -35,25 +35,31 @@ if (box2) {
 }
 
 // RESUME BUTTON
-var showResume = function(e) {
+let showResume = function(e) {
   window.open("http://vanessa-martinez.com/pdfs/vmartinez-resume.pdf");
 };
 
 // MOBILE MENU
-var menuIcon = document.querySelector(".material-icons");
-var mobileMenu = document.querySelector(".mobile-menu");
-var menuOptions = document.querySelectorAll(".mobile-menu a");
+let menuIcon = document.querySelector(".material-icons");
+let mobileMenu = document.querySelector(".desktop-ul");
 
-var toggleMenu = function() {
-    if (mobileMenu.className == "mobile-menu hidden") {
-      mobileMenu.classList.remove("hidden");
-    } else {
-      mobileMenu.classList.add("hidden");
-    }
+let menuOptions = mobileMenu.querySelectorAll("a");
+
+
+let updateAriaPressed = function(menuIcon) {
+  console.log(menuIcon);
+  let currentState = menuIcon.getAttribute('aria-pressed');
+  return (currentState == 'false') ? menuIcon.setAttribute('aria-pressed', 'true') : menuIcon.setAttribute('aria-pressed', 'false');
+}
+
+let toggleMenu = function() {
+  mobileMenu.classList.toggle("active");
+  updateAriaPressed(menuIcon);
 };
 // when you click on an li, close the menu
-var hideMenu = function() {
-    mobileMenu.classList.add("hidden");
+let hideMenu = function() {
+    mobileMenu.classList.remove("active");
+    updateAriaPressed(menuIcon);
 }
 
 // EVENT LISTENERS
@@ -61,9 +67,22 @@ var hideMenu = function() {
 menuIcon.addEventListener('click', function(){
   toggleMenu();
 });
+menuIcon.addEventListener('keydown', function(e) {
+  if (e.code === 'Space' || e.code === 'Enter') {
+    e.preventDefault();
+    toggleMenu();
+  }
+});
+
 
 for (const options of menuOptions) {
   options.addEventListener("click", function(event) {
     hideMenu();
-  })
+  });
+  options.addEventListener("keydown", function(e) {
+    if (e.code === "Space" || e.code === "Enter") {
+      e.preventDefault();
+      hideMenu();
+    };
+  });
 };

@@ -44,62 +44,70 @@
 
           <div class="intro">
             <p>
-              I'm an assistant editor on the Data and Graphics team at the Los Angeles Times. In addition to working with code and data, I collaborate with reporters and editors across the newsroom on the digital presentation of stories.
+              I'm an assistant editor on the Data and Graphics team at the Los Angeles Times. As a data journalist, I analyze data and build visualizations. I also design and develop visual stories.
             </p>
 
             <div class="social-icons">
-              <a href="mailto:vmartinez.contact@gmail.com"><img src="./logos/email-24px.svg"></a>
-              <a href="https://twitter.com/VanessaMartinez"><img src="./logos/Twitter_Logo_WhiteOnImage.png"></a>
-              <a href="https://github.com/vnessamartinez/"><img src="./logos/GitHub-Mark-Light-32px.png"></a>
-              <a href="https://www.linkedin.com/in/vmartinez23/"><img src="./logos/linkedin-64.png"></a>
+              <a href="mailto:vmartinez.contact@gmail.com"><img src="./logos/email-24px.svg" alt="email"></a>
+              <a href="https://bsky.app/profile/vanessamartinez.bsky.social"><img src="./logos/bluesky.svg" alt="Bluesky"></a>
+              <a href="https://twitter.com/VanessaMartinez"><img src="./logos/Twitter_Logo_WhiteOnImage.png" alt="Twitter"></a>
+              <a href="https://github.com/vnessamartinez/"><img src="./logos/GitHub-Mark-Light-32px.png" alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/vmartinez23/"><img src="./logos/linkedin-64.png" alt="LinkedIn"></a>
             </div>
           </div>
-          <img id="downarrow" src="imgs/expand_more-black-18dp.svg">
+          <img alt="bouncing arrow pointing down" aria-hidden="true" id="downarrow" src="imgs/expand_more-black-18dp.svg">
         </div>
         </section>
       </div>
     </div>
 
     <nav class="desktop">
-        <div class="logo"><img src="./imgs/emojis/sparkles.png"><img src="./imgs/emojis/moon.png"></div>
-        <ul class="desktop-ul">
-          <a href="#my-work"><li class="navHome" topic-type="home">My work</li></a>
-          <a href="#about-me"><li class="navAbout" topic-type="design">About Me</li></a>
-          <a href="./pdfs/vmartinez-resume.pdf" target="_blank"><li class="navResume" topic-type="resume">Résumé</li></a>
+        <div class="logo"><img src="./imgs/emojis/sparkles.png"><img src="./imgs/emojis/moon.png" alt="sparkles and moon decorative emojis" aria-hidden="true"></div>
+        <i class="material-icons" alt="menu icon"  tabindex="0" role="button" aria-pressed="false">menu</i>
+        <ul class="desktop-ul" role="menubar">
+          <a href="#my-work"><li class="navHome" topic-type="home" role="menuitem">My work</li></a>
+          <a href="#about-me"><li class="navAbout" topic-type="design" role="menuitem">About Me</li></a>
+          <a href="./pdfs/vmartinez-resume.pdf" target="_blank"><li class="navResume" topic-type="resume" role="menuitem">Résumé</li></a>
         </ul>
-        <div class="mobile-nav">
-          <div class="logo"><img src="./imgs/emojis/sparkles.png"><img src="./imgs/emojis/moon.png"></div>
-          <i class="material-icons">menu</i>
-          <ul class="mobile-menu hidden">
-            <a href="#my-work"><li class="navWork" topic-type="my-work">My work</li></a>
-            <a href="#about-me"><li class="navAbout" topic-type="about-me">About Me</li></a>
-            <a href="./pdfs/vmartinez-resume.pdf" target="_blank"><li class="navResume" topic-type="resume">Résumé</li></a>
-          </ul>
-        </div>
     </nav>
 
     <div class="container">
 
       <section class="topic" section-type="design" id="my-work">
-        <h2 class="section-title">My Work <img src="./imgs/emojis/tech.png"></h2>
+        <h2 class="section-title">My Work <img src="./imgs/emojis/tech.png" alt="woman technologist emoji" aria-hidden="true"></h2>
         <div class="itemsContainer">
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/2023-womens-world-cup-players-build-own-dream-uswnt" target="_blank"><img src="./imgs/thumbnails/uswnt.png"></a>
+            <a href="https://www.latimes.com/politics/story/2025-08-16/proposed-redistricting-new-california-congressional-district-map-comparison" target="_blank"><img src="./imgs/thumbnails/districts-comparison-2025.png" alt="Illustration showing the current and proposed congressional districts. Select to go to article."></a>
+            <div class="itemTitle"><a href="https://www.latimes.com/politics/story/2025-08-16/proposed-redistricting-new-california-congressional-district-map-comparison" target="_blank">How California&rsquo;s proposed redistricting map compares to current congressional districts</a></div>
+            <div class="itemRole">Developer (Mapbox)</div>
+            <!-- <div class="itemAwards"></div> -->
+          </div>         
+
+
+          <div class="item">
+            <a href="https://www.latimes.com/politics/story/2024-election-live-results" target="_blank"><img src="./imgs/thumbnails/election2024.png" alt="Election-related icons. Select to go to the Los Angeles Times' live results landing page for the 2024 general election."></a>
+            <div class="itemTitle"><a href="https://www.latimes.com/politics/story/2024-election-live-results" target="_blank">Live results: 2024 General election</a></div>
+            <div class="itemRole">Developer (Svelte, AWS, API)</div>
+            <!-- <div class="itemAwards"></div> -->
+          </div>
+
+          <div class="item">
+            <a href="https://www.latimes.com/projects/2023-womens-world-cup-players-build-own-dream-uswnt" target="_blank"><img src="./imgs/thumbnails/uswnt.png" alt="Screenshot of interactive element in which a user can build their own all-star U.S. Women's National Team roster. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/2023-womens-world-cup-players-build-own-dream-uswnt" target="_blank">Build your dream U.S. Women’s National Team</a></div>
             <div class="itemRole">Reporter / Developer (Svelte, Canvas)</div>
             <!-- <div class="itemAwards"></div> -->
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/community-civic-engagement-government-participation/" target="_blank"><img src="./imgs/thumbnails/syla.png"></a>
+            <a href="https://www.latimes.com/projects/community-civic-engagement-government-participation/" target="_blank"><img src="./imgs/thumbnails/syla.png" alt="Screenshot of landing page for Shape Your L.A. There is an element for entering you address on the left-hand side. On the right, an illustration of people boarding a bus. Select to go to website."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/community-civic-engagement-government-participation/" target="_blank">Shape Your L.A.</a></div>
             <div class="itemRole">Developer (Svelte, Mapbox, API, Canvas) </div>
             <!-- <div class="itemAwards"></div> -->
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/sports/story/2022-04-29/angel-city-fc-nwsl-womens-soccer" target="_blank"><img src="./imgs/thumbnails/acfc.png"></a>
+            <a href="https://www.latimes.com/sports/story/2022-04-29/angel-city-fc-nwsl-womens-soccer" target="_blank"><img src="./imgs/thumbnails/acfc.png" alt="Bar chart showing the National Women's Soccer League's growing fanbase since 2013. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/sports/story/2022-04-29/angel-city-fc-nwsl-womens-soccer" target="_blank">Women’s professional soccer is back in L.A. Here’s why Angel City FC is ready to thrive
             </a></div>
             <div class="itemRole">Reporter</div>
@@ -107,14 +115,14 @@
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/dia-de-muertos-altar-la-times-2022/" target="_blank"><img src="./imgs/thumbnails/digitalaltar22.png"></a>
+            <a href="https://www.latimes.com/projects/dia-de-muertos-altar-la-times-2022/" target="_blank"><img src="./imgs/thumbnails/digitalaltar22.png" alt="Screenshot of top portion of the page for the Los Angeles Times' 2022 digital día de muertos altar page. In this screenshot, the words 'Día de Muertos' is surrounded by papel picado and marigolds. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/dia-de-muertos-altar-la-times-2022/" target="_blank">Our digital Día de Muertos altar celebrates your loved ones (2022)</a></div>
             <div class="itemRole">Developer - Building off of the previous year's digital altar, I wrote a Python notebook to make the process of uploading and managing submissions easier with a GitHub Action.</div>
             <!-- <div class="itemAwards"></div> -->
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/contribute-dia-de-muertos-altar-la-times/" target="_blank"><img src="./imgs/thumbnails/digitalaltar.jpg"></a>
+            <a href="https://www.latimes.com/projects/contribute-dia-de-muertos-altar-la-times/" target="_blank"><img src="./imgs/thumbnails/digitalaltar.jpg" alt="Screenshot of the top of the Los Angeles Times' 2021 Día de Muertos digital altar page. There is an illustration with marigolds and monarch butterflies. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/contribute-dia-de-muertos-altar-la-times/" target="_blank">Our digital Día de Muertos altar celebrates your loved ones</a></div>
             <div class="itemRole">Designer / Developer</div>
             <!-- <div class="itemAwards"></div> -->
@@ -122,7 +130,7 @@
 
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/latino-gap-timeline-history-latinos-hollywood-movies-tv/" target="_blank"><img src="./imgs/thumbnails/lih-timeline.png"></a>
+            <a href="https://www.latimes.com/projects/latino-gap-timeline-history-latinos-hollywood-movies-tv/" target="_blank"><img src="./imgs/thumbnails/lih-timeline.png" alt="A screenshot of the top of the page from an article titled 'A brutally honest history of Latinos in Hollywood' with a photo illustration of entertainment artists and characters. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/latino-gap-timeline-history-latinos-hollywood-movies-tv/" target="_blank">A brutally honest history of Latinos in Hollywood</a></div>
             <div class="itemRole">Designer / Developer</div>
             <div class="itemAwards"><b>Awards: </b>Society for News Design: <i>Award of Excellence, Infographics: Features</i></div>
@@ -130,7 +138,7 @@
 
 
           <div class="item">
-            <a href="https://www.latimes.com/entertainment-arts/tv/story/2021-06-13/latino-gap-representation-tv-movies-roles-writers-directors-executives" target="_blank"><img src="./imgs/thumbnails/lih.png"></a>
+            <a href="https://www.latimes.com/entertainment-arts/tv/story/2021-06-13/latino-gap-representation-tv-movies-roles-writers-directors-executives" target="_blank"><img src="./imgs/thumbnails/lih.png" alt="A line chart titled 'As population grows, Latino movie roles remain stagnent from an article on Latino representation in film. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/entertainment-arts/tv/story/2021-06-13/latino-gap-representation-tv-movies-roles-writers-directors-executives" target="_blank">Long underrepresented in film and TV, Latinos are falling further behind</a></div>
             <div class="itemRole">Reporter</div>
             <div class="itemAwards"></div>
@@ -138,7 +146,7 @@
 
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/covid-19-vaccine-safety-side-effects-risks-reactions/" target="_blank"><img src="./imgs/thumbnails/vaccines.jpg"></a>
+            <a href="https://www.latimes.com/projects/covid-19-vaccine-safety-side-effects-risks-reactions/" target="_blank"><img src="./imgs/thumbnails/vaccines.jpg" alt="A waffle chart visualization with the words '150 million vaccines have been administered. 0.005% may have resulted in a serious side effect.' Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/covid-19-vaccine-safety-side-effects-risks-reactions/" target="_blank">The COVID-19 vaccines are safe. Here’s what the data shows us</a></div>
             <div class="itemRole">Reporter / Developer</div>
             <div class="itemAwards"><b>Awards: </b>Society for News Design: <i>Bronze, Infographics: Health</i></div>
@@ -146,21 +154,28 @@
 
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/toxic-chemicals-planes-covid-19-travel-woes/" target="_blank"><img src="./imgs/thumbnails/fumes.png"></a>
+            <a href="https://www.latimes.com/projects/toxic-chemicals-planes-covid-19-travel-woes/" target="_blank"><img src="./imgs/thumbnails/fumes.png" alt="Screenshot of top of article titled 'How toxic fumes seep into the air you breathe on planes.' There is a still from a video shown with cloud renderings in the background. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/toxic-chemicals-planes-covid-19-travel-woes/" target="_blank">How toxic fumes seep into the air you breathe on planes</a></div>
             <div class="itemRole">Designer / Developer</div>
             <div class="itemAwards"><b>Awards: </b>Society for News Design: <i>Bronze, Story Page Design</i>; Gerald Loeb Award: <i>Explanatory</i></div>
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/chicano-moratorium/" target="_blank"><img src="./imgs/thumbnails/cm.jpg"></a>
+            <a href="https://www.latimes.com/projects/election-2020-trump-biden-ads-latino-voters/"><img src="./imgs/thumbnails/spanishlanguageads.png" alt="Screenshot of top of article, showing an example of Spanish-language ads from Joe Biden and Donald Trump campaigns. Select to go to article."></a>
+            <div class="itemTitle"><a href="https://www.latimes.com/projects/election-2020-trump-biden-ads-latino-voters/">Biden and Trump offer Latino voters different visions of America — and of each other</a></div>
+            <div class="itemRole">Designer/Developer/Reporter</div>
+            <div class="itemAwards"></div>
+          </div>
+
+          <div class="item">
+            <a href="https://www.latimes.com/projects/chicano-moratorium/" target="_blank"><img src="./imgs/thumbnails/cm.jpg" alt="The Chicano Moratorium: 50 years later. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/chicano-moratorium/" target="_blank">The Chicano Moratorium: 50 years later</a></div>
             <div class="itemRole">Designer / Developer / Reporter</div>
             <div class="itemAwards"><b>Awards: </b>Society for News Design: <i>Award of Excellence</i>; Society for Features Journalism 2021: <i>Features series or project, first place</i></div>
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/la-social-media-dance-influencer/" target="_blank"><img src="./imgs/thumbnails/dancefluencer.png"></a>
+            <a href="https://www.latimes.com/projects/la-social-media-dance-influencer/" target="_blank"><img src="./imgs/thumbnails/dancefluencer.png" alt="Screenshot from article titled 'Rise of the dancefluencer' shows a still from a video where two people are dancing."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/la-social-media-dance-influencer/" target="_blank">Rise of the dancefluencer</a></div>
             <div class="itemRole">Designed the page and contributed reporting on how much money influencers can make.</div>
             <div class="itemAwards"><b>Awards: </b><a href="https://awards.journalists.org/entries/rise-of-the-dancefluencer/">Online Journalism Awards, <i>Feature</i>; Society for News Design: <i>Award of Excellence, Story Page Design </i>; <a href="https://cnpa.com/cja2020/digital/gallery/Arts_&_Entertainment_Coverage_22_Arts_&_Entertainment_Coverage_MAMBMC.html">CNPA: <i>First Place, Arts & Entertainment Coverage</i></a></li>
@@ -168,121 +183,65 @@
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/la-me-sea-level-rise-california-coast/" target="_blank"><img src="./imgs/thumbnails/risingsea.png"></a>
-            <div class="itemTitle"><a href="https://www.latimes.com/projects/la-me-sea-level-rise-california-coast/" target="_blank">California coast disappearing</a></div>
-            <div class="itemRole">Designer / Developer</div>
-            <div class="itemAwards"></div>
-          </div>
-
-          <div class="item">
-            <a href="https://www.latimes.com/projects/la-me-ln-latina-transgender-espanol-support-group-asylum/" target="_blank"><img src="./imgs/thumbnails/transgenerosunidas.jpg"></a>
-            <div class="itemTitle"><a href="https://www.latimes.com/projects/la-me-ln-latina-transgender-espanol-support-group-asylum/" target="_blank">At Transgéneros Unidas, Latinas find refuge and fellowship</a></div>
-            <div class="itemRole">Designer / Developer</div>
-            <div class="itemAwards"><b>Awards: </b><a href="https://cnpa.com/cja2019/digital/gallery/Feature_Story_11_Feature_Story_(MA).html">CNPA: <i>Fourth place, feature story</i></a></div>
-          </div>
-
-
-          <div class="item">
-            <a href="https://www.latimes.com/projects/california-oil-well-drilling-idle-cleanup/" target="_blank"><img src="./imgs/thumbnails/oilwells.png"></a>
+            <a href="https://www.latimes.com/projects/california-oil-well-drilling-idle-cleanup/" target="_blank"><img src="./imgs/thumbnails/oilwells.png" alt="Screenshot shows a still from drone footage over several oil wells behind the the article title 'The toxic legacy of old oil wells: California's multibillion-dollar problem.'' Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/california-oil-well-drilling-idle-cleanup/" target="_blank">The toxic legacy of old oil wells</a></div>
             <div class="itemRole">Designer / Developer</div>
             <div class="itemAwards"><b>Awards: </b><a href="https://cronkite.asu.edu/news-and-events/news/icij-team-cpi-and-los-angeles-times-and-mlk50-propublica-win-2020-barlett">Barlett and Steele, Silver</a></div>
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/election-2020-trump-biden-ads-latino-voters/"><img src="./imgs/thumbnails/spanishlanguageads.png"></a>
-            <div class="itemTitle"><a href="https://www.latimes.com/projects/election-2020-trump-biden-ads-latino-voters/">Biden and Trump offer Latino voters different visions of America — and of each other</a></div>
-            <div class="itemRole">Designer/Developer/Reporter</div>
-            <div class="itemAwards"></div>
-          </div>
-
-          <div class="item">
-            <a href="https://www.latimes.com/projects/lafc-la-galaxy-el-trafico-19/"><img src="./imgs/thumbnails/eltraficothumbnail.jpg"></a>
+            <a href="https://www.latimes.com/projects/lafc-la-galaxy-el-trafico-19/"><img src="./imgs/thumbnails/eltraficothumbnail.jpg" alt="Photo illustration with players from LAFC and LA Galaxy. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/lafc-la-galaxy-el-trafico-19/">El tráfico showdown</a></div>
             <div class="itemRole">Reporter</div>
             <div class="itemAwards"></div>
           </div>
 
           <div class="item">
-            <a href="https://www.latimes.com/projects/la-na-1968-timeline/" target="_blank"><img src="./imgs/thumbnails/1968timeline.jpg"></a>
+            <a href="https://www.latimes.com/projects/la-na-1968-timeline/" target="_blank"><img src="./imgs/thumbnails/1968timeline.jpg" alt="Collage of images from 1968. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.latimes.com/projects/la-na-1968-timeline/" target="_blank">1968: A timeline of anger, grief and change</a></div>
             <div class="itemRole">Designer / Developer</div>
             <div class="itemAwards"></div>
           </div>
 
-<!--           <div class="item">
-            <a href="https://www.latimes.com/projects/la-na-robert-f-kennedy/" target="_blank"><img src="./imgs/thumbnails/kennedy.png"></a>
-            <div class="itemTitle"><a href="https://www.latimes.com/projects/la-na-robert-f-kennedy/" target="_blank">The assassination of Robert Kennedy, as told 50 years later</a></div>
-            <div class="itemRole">Designer / Developer</div>
-            <div class="itemAwards"></div>
-          </div> -->
-
           <div class="item">
-            <a href="https://www.latimes.com/projects/la-pol-ca-gavin-newsom-san-francisco-money/" target="_blank"><img src="./imgs/thumbnails/newsom.jpg"></a>
-            <div class="itemTitle"><a href="https://www.latimes.com/projects/la-pol-ca-gavin-newsom-san-francisco-money/" target="_blank">How eight elite S.F. families funded Newsom's political ascent</a></div>
-            <div class="itemRole">Designer / Developer</div>
-            <div class="itemAwards"></div>
-          </div>
-
-          <div class="item">
-            <a href="https://projects.seattletimes.com/2017/seattle-mayoral-quiz/" target="_blank"><img src="./imgs/thumbnails/seattlemayoralquiz.jpg"></a>
+            <a href="https://projects.seattletimes.com/2017/seattle-mayoral-quiz/" target="_blank"><img src="./imgs/thumbnails/seattlemayoralquiz.jpg" alt="Illustration of Seattle mayoral candidates Jenny Durkan and Cary Moon with the Space Needle at the center. Select to go to article."></a>
             <div class="itemTitle"><a href="https://projects.seattletimes.com/2017/seattle-mayoral-quiz/" target="_blank">Seattle mayoral matchmaker</a></div>
             <div class="itemRole">Designer / Developer</div>
             <div class="itemAwards"></div>
           </div>
 
           <div class="item">
-            <a href="http://projects.seattletimes.com/2016/quizzes/seattle-neighborhoods-quiz/" target="_blank"><img src="./imgs/thumbnails/seattlequiz.jpg"></a>
+            <a href="http://projects.seattletimes.com/2016/quizzes/seattle-neighborhoods-quiz/" target="_blank"><img src="./imgs/thumbnails/seattlequiz.jpg" alt="Illustration showing a few of the neighborhoods in Seattle. Select to go to article."></a>
             <div class="itemTitle"><a href="https://projects.seattletimes.com/2016/quizzes/seattle-neighborhoods-quiz/" target="_blank">Quiz: Find your neighborhood in Seattle</a></div>
             <div class="itemRole">Designer / Developer/ Reporter</div>
             <div class="itemAwards"></div>
           </div>
 
           <div class="item">
-            <a href="https://projects.seattletimes.com/2017/washington-hiking-trails-guide/" target="_blank"><img src="./imgs/thumbnails/seattletrails.jpg"></a>
+            <a href="https://projects.seattletimes.com/2017/washington-hiking-trails-guide/" target="_blank"><img src="./imgs/thumbnails/seattletrails.jpg" alt="Illustration of hiking boots. Select to go to article."></a>
             <div class="itemTitle"><a href="https://projects.seattletimes.com/2017/washington-hiking-trails-guide/" target="_blank">Guide to Washington's hiking trails</a></div>
             <div class="itemRole">Designer / Developer / Illustrator</div>
             <div class="itemAwards"></div>
           </div>
 
           <div class="item">
-            <a href="https://www.seattletimes.com/sports/seahawks/earl-thomas-tyler-lockett-thomas-rawls-tracking-seahawks-injuries-in-2016/" target="_blank"><img src="./imgs/thumbnails/seahawks.jpg"></a>
+            <a href="https://www.seattletimes.com/sports/seahawks/earl-thomas-tyler-lockett-thomas-rawls-tracking-seahawks-injuries-in-2016/" target="_blank"><img src="./imgs/thumbnails/seahawks.jpg" alt="Illustration of interactive element showing Seahawks players that missed games due to injuries, by week. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.seattletimes.com/sports/seahawks/earl-thomas-tyler-lockett-thomas-rawls-tracking-seahawks-injuries-in-2016/" target="_blank">Tracking Seahawks’ injuries in 2016</a></div>
             <div class="itemRole">Interactive developer</div>
             <div class="itemAwards"></div>
           </div>
 
           <div class="item">
-            <a href="https://www.seattletimes.com/seattle-news/pike-place-market-74-million-addition-marketfront-360-video/" target="_blank"><img src="./imgs/thumbnails/pikeplace.jpg"></a>
+            <a href="https://www.seattletimes.com/seattle-news/pike-place-market-74-million-addition-marketfront-360-video/" target="_blank"><img src="./imgs/thumbnails/pikeplace.jpg" alt="Annotated image of Pike Place Market. Select to go to article."></a>
             <div class="itemTitle"><a href="https://www.seattletimes.com/seattle-news/pike-place-market-74-million-addition-marketfront-360-video/" target="_blank">360-degree views at Pike Place Market</a></div>
             <div class="itemRole">Interactive developer</div>
             <div class="itemAwards"></div>
           </div>
 
-        <div class="expandable-box-container" id="expandable-box">
-            <p id="expandable-box-container-teaser"> See my older print design work <span class="expand-minimize">+</span></p>
-
-            <div class="box-list">
-              <div class="print-item"><img src="./imgs/supertuesday.jpg"></div>
-              <div class="print-item"><img src="./imgs/dow.jpg"></div>
-              <div class="print-item"><img src="./imgs/disney-impacto.jpg"></div>
-              <div class="print-item"><img src="./imgs/familybusiness.jpg"></div>
-              <div class="print-item"><img src="./imgs/fearless-flier.jpg"></div>
-              <div class="print-item"><img src="./imgs/futureisnow.jpg"></div>
-              <div class="print-item"><img src="./imgs/paris.jpg"></div>
-              <div class="print-item"><img src="./imgs/roles-for-latinos.jpg"></div>
-              <div class="print-item"><img src="./imgs/valentinesday.jpg"></div>
-              <div class="print-item"><img src="./imgs/whatsinanumber.jpg"></div>
-              <div class="print-item"><img src="./imgs/donovan1.jpg"></div>
-              <div class="print-item"><img src="./imgs/donovan.jpg"></div>
-
-            </div>
-        </div>
-
       </section>
 
       <section class="about" id="about-me">
-        <p class="about-me"><img src="./imgs/emojis/sparkles.png">About Me <img src="./imgs/emojis/sparkles.png"></p>
+        <h2 class="about-me"><img src="./imgs/emojis/sparkles.png">About Me <img src="./imgs/emojis/sparkles.png"></h2>
 
         <img id="headshot" alt="Vanessa" src="./imgs/vanessa.jpg">
 
@@ -296,11 +255,11 @@
 
         <p>In my spare time, I like to draw and paint.</p>
 
-        <p>Want to see more of my work? <a href="mailto:vmartinez.contact@gmail.com">Get in touch</a> and <a href="./pdfs/vmartinez-resume.pdf" target="_blank">view my résumé</a>.</p>
+        <p>Want to see more of my work? <a href="mailto:vmartinez.contact@gmail.com">Get in touch</a> and <a href="./pdfs/vmartinez-resume.pdf" target="_blank">view my résumé</a>, or see my <a href="https://www.latimes.com/people/vanessa-martinez" target="_blank">latest published work</a>.</p>
 
       </section>
 
-      <footer>Vanessa Mart&iacute;nez • Updated July 2024</footer>
+      <footer>Vanessa Mart&iacute;nez • Updated September 2025</footer>
 
       <script src="main.js" async></script>
 
